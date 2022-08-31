@@ -15,7 +15,7 @@ function Header() {
   return (
     <Container>
       <LogoContainer>
-        <img src={Logo} />
+        <img src={Logo} width={150} height={75} />
       </LogoContainer>
       <ButtonsContainer>
         <Button>

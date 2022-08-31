@@ -16,7 +16,7 @@ export const LogoContainer = styled.div`
 `;
 
 export const ButtonsContainer = styled.div`
-  width: 50%;
+  width: 70%;
   height: 100%;
 
   display: flex;
@@ -35,7 +35,7 @@ export const Button = styled.button`
 
 export const ButtonText = styled.p`
   font-family: "Poppins";
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 700;
 
   text-align: left;
@@ -62,9 +62,9 @@ export const ContactButton = styled.button`
   background-color: transparent;
 
   border: 3px solid #a4bad2;
-  border-radius: 20px;
+  border-radius: 15px;
 
-  padding: 10px;
+  padding: 3px;
 `;
 
 export const ContactButtonText = styled.p`

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ButtonUI from "@mui/material/Button";
 
 export const Container = styled.div`
   display: flex;
@@ -114,8 +115,58 @@ export const SocialMediaContainer = styled.div`
   height: 3.1rem;
   width: 3.1rem;
 
-  border-radius: 1.6rem;
+  border-radius: 80rem;
   border: 3px solid ${({ theme }) => theme.color.secondary};
+
+  background-color: transparent;
+`;
+
+export const GraduatedFloatContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 300px;
+  height: 100px;
+
+  background-color: ${({ theme }) => theme.color.background_color};
+  bottom: 60%;
+  right: 15%;
+
+  z-index: 1;
+
+  border-radius: 20px;
+  box-shadow: 4px 4px 8px 8px ${({ theme }) => theme.color.support_secondary};
+`;
+
+export const SchoolIconContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 15px;
+
+  box-shadow: 3px 3px 6px 6px ${({ theme }) => theme.color.support_secondary};
+  background-color: ${({ theme }) => theme.color.background_color};
+
+  position: absolute;
+  z-index: 2;
+  top: 6%;
+  right: 5%;
+`;
+
+export const FloatContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 25rem;
+  height: 10rem;
+
+  position: absolute;
+
+  bottom: 60%;
+  right: 10%;
 `;
 
 //Info Texts
@@ -136,5 +187,13 @@ export const InfoSubtitle = styled.p`
   font-weight: 600;
 
   margin-bottom: 94px;
+  color: ${({ theme }) => theme.color.text_secondary};
+`;
+
+export const GraduatedText = styled.p`
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-weight: 500;
+
   color: ${({ theme }) => theme.color.text_secondary};
 `;
