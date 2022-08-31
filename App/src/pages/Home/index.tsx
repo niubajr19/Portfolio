@@ -17,8 +17,21 @@ import {
 import Thumb from "../../assets/thumb.webp";
 import { useTheme } from "styled-components";
 
+import Lottie from "react-lottie";
+
+import scrollAnimated from "../../assets/lottie/scroll-down.json";
+
+import GithubSvg from "../../assets/social-medias/github.svg";
+
 function Home() {
   const theme = useTheme();
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: scrollAnimated,
+  };
+
   return (
     <Container>
       <Header />
@@ -40,7 +53,9 @@ function Home() {
                 borderRadius: 80,
                 backgroundColor: "red",
               }}
-            ></div>
+            >
+              <img src={GithubSvg} alt="Github Logo" />
+            </div>
             <div
               style={{
                 width: 50,
@@ -82,7 +97,7 @@ function Home() {
               position: "absolute",
               bottom: "60%",
               right: "15%",
-              zIndex: 2,
+              zIndex: 1,
               alignItems: "center",
               justifyContent: "center",
             }}
@@ -91,10 +106,14 @@ function Home() {
           </div>
           <img
             src={Thumb}
-            style={{ borderRadius: 150, zIndex: 1 }}
+            style={{ borderRadius: 300, zIndex: 2, opacity: 0.9 }}
             width={600}
+            height={600}
           />
         </ThumbContainer>
+        <div style={{ position: "absolute", bottom: "1%", left: -50 }}>
+          <Lottie options={defaultOptions} height={150} width={150} />
+        </div>
       </Content>
       <div
         style={{
