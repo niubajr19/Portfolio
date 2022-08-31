@@ -84,13 +84,13 @@ export const ButtonText = styled.p`
   color: ${({ theme }) => theme.color.background_color};
 `;
 
-export const SocialMediaContainer = styled.div`
+export const SocialMediasContainer = styled.div`
   display: flex;
 
   height: 10%;
-  width: 30%;
+  width: 35%;
 
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
 
   margin-top: 136px;
@@ -104,6 +104,18 @@ export const ThumbContainer = styled.div`
 
   align-items: center;
   justify-content: flex-start;
+`;
+
+export const SocialMediaContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 3.1rem;
+  width: 3.1rem;
+
+  border-radius: 1.6rem;
+  border: 3px solid ${({ theme }) => theme.color.secondary};
 `;
 
 //Info Texts

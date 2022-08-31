@@ -10,6 +10,7 @@ import {
   InfoContainer,
   InfoSubtitle,
   SocialMediaContainer,
+  SocialMediasContainer,
   ThumbContainer,
   TitleContainer,
 } from "./styles";
@@ -21,7 +22,9 @@ import Lottie from "react-lottie";
 
 import scrollAnimated from "../../assets/lottie/scroll-down.json";
 
-import GithubSvg from "../../assets/social-medias/github.svg";
+import GithubImg from "../../assets/social-medias/github.png";
+import LinkedinImg from "../../assets/social-medias/linkedin.png";
+import InstagramImg from "../../assets/social-medias/instagram.png";
 
 function Home() {
   const theme = useTheme();
@@ -39,40 +42,33 @@ function Home() {
         <InfoContainer>
           <GreatsTitle>Hi, I'm Lucas Antonio</GreatsTitle>
           <InfoSubtitle>
-            A front end developer with experiece with React, React Native and
-            Angular
+            A front end developer with experiece in React, React Native and
+            Angular.
           </InfoSubtitle>
           <Button>
             <ButtonText>Hire Me</ButtonText>
           </Button>
-          <SocialMediaContainer>
-            <div
-              style={{
-                width: 50,
-                height: 50,
-                borderRadius: 80,
-                backgroundColor: "red",
-              }}
-            >
-              <img src={GithubSvg} alt="Github Logo" />
-            </div>
-            <div
-              style={{
-                width: 50,
-                height: 50,
-                borderRadius: 80,
-                backgroundColor: "red",
-              }}
-            ></div>
-            <div
-              style={{
-                width: 50,
-                height: 50,
-                borderRadius: 80,
-                backgroundColor: "red",
-              }}
-            ></div>
-          </SocialMediaContainer>
+          <SocialMediasContainer>
+            <SocialMediaContainer>
+              <img src={GithubImg} alt="Github Logo" width={30} height={30} />
+            </SocialMediaContainer>
+            <SocialMediaContainer>
+              <img
+                src={LinkedinImg}
+                alt="Linkedin Logo"
+                width={30}
+                height={30}
+              />
+            </SocialMediaContainer>
+            <SocialMediaContainer>
+              <img
+                src={InstagramImg}
+                alt="Instagram Logo"
+                width={30}
+                height={30}
+              />
+            </SocialMediaContainer>
+          </SocialMediasContainer>
         </InfoContainer>
         <ThumbContainer>
           <div
