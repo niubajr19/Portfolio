@@ -103,9 +103,9 @@ function Home() {
               width: 250,
               height: 250,
               position: "absolute",
-              bottom: "8%",
-              left: "35%",
-              zIndex: 2,
+              top: "15%",
+              left: "15%",
+              zIndex: 0,
             }}
           />
           <FloatContainer>

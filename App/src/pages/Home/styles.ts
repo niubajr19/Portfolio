@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import ButtonUI from "@mui/material/Button";
 
 export const Container = styled.div`
   display: flex;
@@ -32,6 +31,8 @@ export const InfoContainer = styled.div`
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
+
+  z-index: 1;
 `;
 
 export const TitleContainer = styled.div`
