@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import {
   Button,
   ButtonText,
+  Circle,
   Container,
   Content,
   FloatContainer,
@@ -13,8 +14,11 @@ import {
   InfoSubtitle,
   SchoolIconContainer,
   SocialMediaContainer,
+  SocialMediaImg,
   SocialMediasContainer,
   ThumbContainer,
+  ThumbImg,
+  TitleContainer,
 } from "./styles";
 
 import Thumb from "../../assets/thumb.webp";
@@ -46,7 +50,9 @@ function Home() {
       <Header />
       <Content>
         <InfoContainer>
-          <GreatsTitle>Hi, I'm Lucas Antonio</GreatsTitle>
+          <TitleContainer>
+            <GreatsTitle>Hi, I'm Lucas Antonio</GreatsTitle>
+          </TitleContainer>
           <InfoSubtitle>
             A front end developer with experiece in React, React Native and
             Angular.
@@ -61,7 +67,7 @@ function Home() {
                 color="secondary"
                 target={"_blank"}
               >
-                <img src={GithubImg} alt="Github Logo" width={30} height={30} />
+                <SocialMediaImg src={GithubImg} alt="Github Logo" />
               </ButtonUI>
             </SocialMediaContainer>
 
@@ -71,12 +77,7 @@ function Home() {
                 color="secondary"
                 target={"_blank"}
               >
-                <img
-                  src={LinkedinImg}
-                  alt="Linkedin Logo"
-                  width={30}
-                  height={30}
-                />
+                <SocialMediaImg src={LinkedinImg} alt="Linkedin Logo" />
               </ButtonUI>
             </SocialMediaContainer>
             <SocialMediaContainer>
@@ -85,29 +86,13 @@ function Home() {
                 color="secondary"
                 target={"_blank"}
               >
-                <img
-                  src={InstagramImg}
-                  alt="Instagram Logo"
-                  width={30}
-                  height={30}
-                />
+                <SocialMediaImg src={InstagramImg} alt="Instagram Logo" />
               </ButtonUI>
             </SocialMediaContainer>
           </SocialMediasContainer>
         </InfoContainer>
         <ThumbContainer>
-          <div
-            style={{
-              backgroundColor: "rgba(220, 227, 237, 1)",
-              borderRadius: 150,
-              width: 250,
-              height: 250,
-              position: "absolute",
-              top: "15%",
-              left: "15%",
-              zIndex: 0,
-            }}
-          />
+          <Circle />
           <FloatContainer>
             <SchoolIconContainer>
               <MdSchool color={theme.color.primary} size={40} />
@@ -117,14 +102,9 @@ function Home() {
             </GraduatedFloatContainer>
           </FloatContainer>
 
-          <img
-            src={Thumb}
-            style={{ borderRadius: 300, zIndex: 2, opacity: 0.9 }}
-            width={600}
-            height={600}
-          />
+          <ThumbImg src={Thumb} />
         </ThumbContainer>
-        <div style={{ position: "absolute", bottom: "1%", left: -50 }}>
+        <div style={{ position: "absolute", bottom: "1%", left: 10 }}>
           <Lottie options={defaultOptions} height={150} width={150} />
         </div>
       </Content>
