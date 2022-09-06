@@ -27,16 +27,20 @@ export const ButtonsContainer = styled.div`
 export const Button = styled.button`
   background-color: transparent;
 
-  min-width: 10rem;
-  padding: 10px;
+  width: 10rem;
+  padding: 0.5rem;
 
   border: none;
+
+  @media (max-width: 1024px) {
+    min-width: 4rem;
+  }
 `;
 
 export const ButtonText = styled.p`
   font-family: "Poppins";
-  font-size: 1.15rem;
-  font-weight: 700;
+  font-size: 1.6rem;
+  font-weight: 600;
 
   text-align: left;
 `;
@@ -65,10 +69,24 @@ export const ContactButton = styled.button`
   border-radius: 15px;
 
   padding: 3px;
+
+  @media (max-width: 1024px) {
+    width: 8rem;
+    min-width: 4rem;
+  }
 `;
 
 export const ContactButtonText = styled.p`
   font-family: "Poppins";
   font-size: 1.25rem;
   font-weight: 400;
+
+  @media (max-width: 1024px) {
+    font-size: 1rem;
+  }
+`;
+
+export const Logo = styled.img`
+  width: 8rem;
+  height: 4rem;
 `;

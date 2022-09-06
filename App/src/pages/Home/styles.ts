@@ -253,13 +253,21 @@ export const GreatsTitle = styled.p`
 
   margin-bottom: 94px;
 
-  @media (max-width: 1025px) {
+  @media (max-width: 1025px) and (min-width: 670px) {
     text-align: center;
     font-size: 4.5rem;
     margin: 0;
 
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 3.7rem;
+    padding-right: 3.7rem;
+  }
+  @media (max-width: 670px) {
+    text-align: center;
+    font-size: 4.5rem;
+    margin: 0;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 `;
 

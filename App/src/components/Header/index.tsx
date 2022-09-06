@@ -7,15 +7,16 @@ import {
   ContactButtonText,
   Container,
   LogoContainer,
+  Logo,
 } from "./styles";
 
-import Logo from "../../assets/logo/logo-no-background.png";
+import LogoLa from "../../assets/logo/logo-no-background.png";
 
 function Header() {
   return (
     <Container>
       <LogoContainer>
-        <img src={Logo} width={150} height={75} />
+        <Logo src={LogoLa} />
       </LogoContainer>
       <ButtonsContainer>
         <Button>
